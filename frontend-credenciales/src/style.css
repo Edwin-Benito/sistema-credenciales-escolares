@@ -1,0 +1,53 @@
+/* Tailwind core */
+@import "tailwindcss";
+
+/* Google font for the design */
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&display=swap");
+
+/* Design tokens as CSS variables (no @theme to avoid linter errors) */
+:root {
+  --color-primary: #2196f3;
+  --color-accent: #ff9800;
+  --color-background-light: #f5f7f8;
+  --color-background-dark: #121212;
+  --color-text-light: #333333;
+  --color-text-dark: #e0e0e0;
+  --font-display: "Public Sans", sans-serif;
+}
+
+/* Minimal base styles (avoid overriding Tailwind utility behavior) */
+html.dark {
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  font-family: var(--font-display);
+  background-color: var(--color-background-dark);
+  color: var(--color-text-dark);
+}
+
+/* Custom utilities to mirror Tailwind class names used in the design */
+@layer utilities {
+  .bg-primary { background-color: var(--color-primary); }
+  .text-primary { color: var(--color-primary); }
+  .border-primary { border-color: var(--color-primary); }
+  .bg-primary\/20 { background-color: rgb(33 150 243 / 0.2); }
+  .hover\:bg-primary\/90:hover { background-color: rgb(33 150 243 / 0.9); }
+
+  .text-accent { color: var(--color-accent); }
+  .border-accent { border-color: var(--color-accent); }
+  .bg-accent\/20 { background-color: rgb(255 152 0 / 0.2); }
+
+  .bg-background-dark { background-color: var(--color-background-dark); }
+  .bg-background-light { background-color: var(--color-background-light); }
+  .text-text-dark { color: var(--color-text-dark); }
+  .text-text-light { color: var(--color-text-light); }
+  .font-display { font-family: var(--font-display); }
+}
+
+/* Form input normalization per design */
+.form-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

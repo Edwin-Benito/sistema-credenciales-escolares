@@ -1,0 +1,47 @@
+{
+  "name": "api-credenciales",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node index.ts",
+    "dev:watch": "nodemon --exec ts-node index.ts",
+    "migrate": "ts-node db/migrate.ts",
+    "seed": "ts-node db/seed.ts",
+    "add:user-status": "ts-node db/add_user_status.ts",
+    "db:tables": "ts-node db/list_tables.ts",
+    "db:show": "ts-node db/show_table.ts",
+    "db:dump": "ts-node db/dump_all.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "exceljs": "^4.4.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "pdfkit": "^0.17.2",
+    "qrcode": "^1.5.4",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^22.10.2",
+    "@types/pdfkit": "^0.17.3",
+    "@types/qrcode": "^1.5.6",
+    "@types/sqlite3": "^3.1.11",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}

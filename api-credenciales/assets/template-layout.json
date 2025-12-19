@@ -1,0 +1,193 @@
+{
+  "anverso": {
+    "image": "assets/plantilla-anverso.png",
+    "width": null,
+    "height": null,
+    "zones": {
+      "foto": {
+        "x": 0.0967,
+        "y": 0.3042,
+        "w": 0.2842,
+        "h": 0.2604
+      },
+      "header": {
+        "x": 0.40,
+        "y": 0.12,
+        "w": 0.52,
+        "h": 0.12
+      },
+      "nombre": {
+        "x": 0.4799,
+        "y": 0.3886,
+        "w": 0.5123,
+        "h": 0.1010
+      },
+      "curp": {
+        "x": 0.48,
+        "y": 0.50,
+        "w": 0.46,
+        "h": 0.04
+      },
+      "grado": {
+        "x": 0.4824,
+        "y": 0.5413,
+        "w": 0.4567,
+        "h": 0.1010
+      },
+      "ciclo": {
+        "x": 0.3040,
+        "y": 0.7088,
+        "w": 0.4113,
+        "h": 0.0445
+      }
+    },
+    "fields": {
+      "foto": {
+        "zone": "foto",
+        "type": "image"
+      },
+      "escuelaNombre": {
+        "zone": "header",
+        "align": "left",
+        "valign": "top",
+        "size": 11,
+        "minSize": 8,
+        "font": "regular",
+        "color": "#000000",
+        "autoFit": true
+      },
+      "escuelaCct": {
+        "zone": "header",
+        "align": "left",
+        "valign": "bottom",
+        "size": 10,
+        "font": "regular",
+        "color": "#000000"
+      },
+      "nombreCompleto": {
+        "zone": "nombre",
+        "align": "center",
+        "valign": "middle",
+        "size": 12,
+        "minSize": 10,
+        "font": "bold",
+        "color": "#000000",
+        "autoFit": true
+      },
+      "curp": {
+        "zone": "curp",
+        "align": "center",
+        "valign": "middle",
+        "size": 9,
+        "minSize": 7,
+        "font": "regular",
+        "color": "#000000",
+        "autoFit": true
+      },
+      "gradoGrupo": {
+        "zone": "grado",
+        "align": "center",
+        "valign": "middle",
+        "size": 35,
+        "minSize": 20,
+        "font": "bold",
+        "color": "#000000",
+        "autoFit": true
+      },
+      "cicloEscolar": {
+        "zone": "ciclo",
+        "align": "center",
+        "valign": "middle",
+        "size": 30,
+        "minSize": 18,
+        "font": "bold",
+        "color": "#000000",
+        "autoFit": true
+      }
+    }
+  },
+
+  "reverso": {
+    "image": "assets/plantilla-reverso.png",
+    "width": null,
+    "height": null,
+    "zones": {
+      "tutor": {
+        "x": 0.30,
+        "y": 0.17,
+        "w": 0.60,
+        "h": 0.08
+      },
+      "telefono1": {
+        "x": 0.30,
+        "y": 0.27,
+        "w": 0.60,
+        "h": 0.06
+      },
+      "telefono2": {
+        "x": 0.30,
+        "y": 0.34,
+        "w": 0.60,
+        "h": 0.06
+      },
+      "tipoSangre": {
+        "x": 0.30,
+        "y": 0.42,
+        "w": 0.60,
+        "h": 0.08
+      },
+      "domicilio": {
+        "x": 0.30,
+        "y": 0.52,
+        "w": 0.60,
+        "h": 0.15
+      }
+    },
+    "fields": {
+      "tutor": {
+        "zone": "tutor",
+        "align": "left",
+        "valign": "middle",
+        "size": 13,
+        "minSize": 9,
+        "font": "bold",
+        "color": "#000000",
+        "autoFit": true
+      },
+      "telefono1": {
+        "zone": "telefono1",
+        "align": "left",
+        "valign": "middle",
+        "size": 13,
+        "font": "bold",
+        "color": "#000000"
+      },
+      "telefono2": {
+        "zone": "telefono2",
+        "align": "left",
+        "valign": "middle",
+        "size": 13,
+        "font": "bold",
+        "color": "#000000"
+      },
+      "tipoSangre": {
+        "zone": "tipoSangre",
+        "align": "left",
+        "valign": "middle",
+        "size": 15,
+        "font": "bold",
+        "color": "#000000"
+      },
+      "domicilio": {
+        "zone": "domicilio",
+        "align": "left",
+        "valign": "top",
+        "size": 10,
+        "minSize": 7,
+        "font": "regular",
+        "color": "#000000",
+        "autoFit": true
+      }
+    }
+  }
+}
